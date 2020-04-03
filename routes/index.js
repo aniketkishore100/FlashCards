@@ -1,5 +1,5 @@
 const express = require('express')
-const routes = express()
+const routes = express.Router()
 
 
 routes.get('/',(req,res)=>{    
@@ -10,10 +10,6 @@ routes.get('/',(req,res)=>{
     else{
         res.redirect('/hello');
     }
-})
-
-routes.get('/cards',(req,res)=>{
-    res.render("card",{ prompt: "Where are you??",hint: "Here is your Hint",colors});
 })
 
 routes.get('/hello',(req,res)=>{
