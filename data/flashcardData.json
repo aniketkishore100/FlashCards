@@ -1,0 +1,27 @@
+{
+    "data":{
+        "title": "", 
+        "cards":[
+            {
+                "question":"Ques1 here",
+                "hint":"Hint for Question 1 here",
+                "answer":"Answer 1 here"
+            },
+            {
+                "question":"Ques2 here",
+                "hint":"Hint for Question 2 here",
+                "answer":"Answer 2 here"
+            },
+            {
+                "question":"Ques3 here",
+                "hint":"Hint for Question 3 here",
+                "answer":"Answer 3 here"
+            },
+            {
+                "question":"Ques4 here",
+                "hint":"Hint for Question 4 here",
+                "answer":"Answer 4 here"
+            }
+        ]
+    }
+}
