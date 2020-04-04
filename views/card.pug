@@ -2,10 +2,8 @@ extends layout
 
 block content
     section#content
-        //- ul
-        //-     each color in colors
-        //-             li=color
-        h2= prompt 
+        h2= text 
         p
             i Hint: #{hint}
+        a(href = `/cards/${id}?side=${sideToShow}`)=sideToShowDisplay
                 
