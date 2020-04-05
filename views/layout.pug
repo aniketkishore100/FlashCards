@@ -3,8 +3,12 @@ html(lang="en")
     head 
         title Flash Cards
     body
-        header 
-            h1 Flash Cards
-        block content
-        footer 
+    header 
+    h1 Flash Cards
+    if name
+        h2 Welcome, #{name}!
+        form(action="/goodbye",method="get")
+            button(type="submit") Goodbye!!
+    block content
+    footer 
             p An app to help you Study

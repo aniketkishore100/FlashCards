@@ -5,5 +5,7 @@ block content
         h2= text 
         p
             i Hint: #{hint}
-        a(href = `/cards/${id}?side=${sideToShow}`)=sideToShowDisplay
+        a(href = `/cards/${id}?side=${sideToShow}`)= sideToShowDisplay
+        br
+        a(href= `/cards`) Next Card
                 
