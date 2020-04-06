@@ -3,7 +3,7 @@ const routes = express.Router()
 
 
 routes.get('/',(req,res)=>{    
-    name = req.cookies.username;
+    const name = req.cookies.username;
     if(name){
         res.render('index',{name:name})
     }

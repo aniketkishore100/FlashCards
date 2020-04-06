@@ -15,14 +15,15 @@ const cardRoute = require('./routes/cards.js')
 app.use(mainRoutes)
 app.use(cardRoute)
 
-// app.use((req,res,next)=>{
-//     const err = new Error('Not Found');
-//     err.status= 404;
-//     next(err)
-// })
+app.use((req,res,next)=>{
+    const err = new Error('Not Found');
+    err.status= 404;
+    next(err)
+})
 
 app.use((err,req,res,next)=>{
-    // res.locals.error = err
+    res.locals.error = err
+    res.status(err.status)
     res.render('error',{err:err});
 });
 
